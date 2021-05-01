@@ -16,17 +16,17 @@ class JSONEncoder(json.JSONEncoder):
         return json.JSONEncoder.default(self, o)
 
 
-'''
+#CONNECT TO MONGODB
 client = MongoClient(
-    'mongodb+srv://zips:zips@zips.rcqrf.mongodb.net/<dbname>?retryWrites=true&w=majority')
+    'mongodb+srv://**********.rcqrf.mongodb.net/<dbname>?retryWrites=true&w=majority')
 db = client.get_database('zips_db')
-'''
+
 print('xxxx!!!!!!!xxxx')
 
 
 def info_view(request, *args, **kwargs):
     if request.method == 'GET':
-        return JsonResponse({'info': 'the zips api will be than in two mounts from now'})
+        return JsonResponse({'info': 'the zips api will be done in two months from now'})
     else:
         return JsonResponse({error: '404'})
 
