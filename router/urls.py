@@ -16,7 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from api.views import createProfile_view, getProfile_view, sendrequest_view, createpost_view, info_view, hideauth_view, deletepost_view, getpost_view, ratepost_view, sharepost_view, comment_reply_view, rate_comment_view, rate_reply_view
+from api.views import createProfile_view, 
+getProfile_view, 
+sendrequest_view,
+createpost_view, 
+info_view, hideauth_view, 
+deletepost_view, 
+getpost_view, 
+ratepost_view, 
+sharepost_view,
+comment_reply_view, 
+rate_comment_view,
+rate_reply_view
+
 
 urlpatterns = [
     path('', info_view),
